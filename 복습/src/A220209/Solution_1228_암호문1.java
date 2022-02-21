@@ -39,12 +39,15 @@ public class Solution_1228_암호문1 {
 				// 새 암호문 길이
 				int y = Integer.parseInt(st.nextToken());
 				
+				// 명령어의 개수만큼 반복
 				for (int j = 0; j < y; j++) {
+					// 새 암호문 삽입할 위치에 새 암호문 삽입
 					pw.add(x, Integer.parseInt(st.nextToken()));
 					x++;
 				}
 			}
 			
+			// 출력
 			sb.append("#"+tc+" ");
 			for (int i = 0; i < 10; i++) {
 				sb.append(pw.get(i)+" ");
