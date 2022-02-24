@@ -1,4 +1,4 @@
-package P2578;
+package BACKJOON;
 
 import java.io.*;
 import java.util.*;
@@ -17,16 +17,21 @@ public class Main_빙고 {
 			}
 		}
 		
+		// 사회자가 번호 부르기
 		for (int i = 0; i < 25; i++) {
 			int num = sc.nextInt();
+			// 횟수 카운트
 			ans++;
 			
+			// 부른 번호 빙고판에 체크
 			for (int r = 0; r < 5; r++) {
 				for (int c = 0; c < 5; c++) {
 					if(map[r][c] == num) {
 						map[r][c] = -1;
 						
+						// 가로 세로 대각선 체크 후 빙고Count가 3 이상이면
 						if (check(r, c) >= 3) {
+							// 횟수 출력 후 반복 종료
 							System.out.println(ans);
 							return;
 						}
@@ -36,6 +41,7 @@ public class Main_빙고 {
 		}
 	}
 	
+	// 가로 세로 대각선 체크
 	static int check(int r, int c) {
 		// 빙고 줄 개수
 		int cnt = 0;

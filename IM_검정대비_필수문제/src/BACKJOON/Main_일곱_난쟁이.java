@@ -1,4 +1,4 @@
-package P2309;
+package BACKJOON;
 
 import java.io.*;
 import java.util.*;
