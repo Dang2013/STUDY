@@ -3,7 +3,7 @@ package A0309;
 import java.io.*;
 import java.util.*;
 
-public class Main_숫자판점프_당현찬 {
+public class Main_숫자판점프_당현찬_미완성 {
 
 	static int[][] map;
 	static int[] select = new int[6];
