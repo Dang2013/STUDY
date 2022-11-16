@@ -1,4 +1,4 @@
-package A221108;
+package BACKJOON.A221108;
 
 import java.io.BufferedReader;
 import java.io.IOException;

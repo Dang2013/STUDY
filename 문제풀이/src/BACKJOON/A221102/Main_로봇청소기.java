@@ -1,4 +1,4 @@
-package A221102;
+package BACKJOON.A221102;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
